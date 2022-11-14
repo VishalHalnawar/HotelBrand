@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+  
+    <style>
+        .navbar-brand {
+            color: darkblue;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        section {
+            background-image: url(/images/background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: fit-content;
+        }
+
+        .shade {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .offer {
+            font-size: 70px;
+            font-family: Arial;
+            color: pink;
+        }
+
+       
+        .d-flex{
+            flex-wrap: wrap;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        form {
+            border:1px solid lightgray;
+            padding: 20px;
+            border-radius: 20px;
+            width: 400px;
+        }
+        footer{
+            background-color: rgb(11, 11, 41);
+            color: white;
+            padding: 15px;
+        }
+
+      
+    </style>
+    
+</head>
+
+<body class="container-sm">
+    <header>
+        <nav class="navbar navbar-toggler bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Hotel Brand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hotel Brand</h5>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About</a>
+                            </li>
+                            <li class="nav-item active" >
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <!-- header compleated-->
+    <section>
+        <div class="shade">
+            <main class="text-light d-flex justify-content-center text-center align-items-center" style="height:500px">
+                <div>
+                    <h1 class="offer">20% off With Family</h1>
+                    <h1>Enjoy The Greatest Time </h1>
+                    <h4 class="mt-2">With Our Family</h4>
+                    <h3 class="mt-2"></h3>
+                </div>
+        </div>
+        </main>
+        </div>
+    </section>
+    <div class="mt-2">
+         <div>
+            <button class="btn btn-primary w-100 text-center" data-bs-toggle="collapse" data-bs-target="#mycollapse">Click to Resister</button>
+         </div>
+         <div id="mycollapse" class="collapse">
+            <div class="container">
+                <div class="box mt-2">
+                    <form>
+                       <h4 class="text-center"><span class="bi bi-person-circle"></span> Register</h4>
+                       <div class="mb-2">
+                           <label class="form-label" for="UserName">User Name </label>
+                           <div>
+                               <input type="text" id="txtName" class="form-control" name="UserName" placeholder="Enter name">
+                           </div>
+                       </div>
+                       <div class="mb-2">
+                           <label class="form-label" >Mobile Number</label>
+                           <div>
+                               <input type="number" id="txtPasswd" class="form-control" placeholder="Enter Mobile Number">
+                           </div>
+                       </div>
+                       <div class="mb-2">
+                        <label class="form-label" >Adhar Number</label>
+                        <div>
+                            <input type="number" class="form-control" id="txtAdhar"  placeholder="Enter adhar number">
+                        </div>
+                    
+                        <div class="mb-2">
+                            <label class="form-label">Pan Number</label>
+                            <div>
+                                <input type="text" class="form-control" id="txtPan"  placeholder="pan card number">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Total Persons</label>
+                            <div>
+                                <input type="text" class="form-control" id="txtPerson"  placeholder="pan card number">
+                            </div>
+                        </div>
+                        <div>
+                           <button class="btn btn-primary w-100">Register</button>
+                       </div>
+                    </form>
+                 </div>
+
+            </div>
+
+         </div>
+    </div>
+    <div class="mt-2">
+        <div class="row ">
+            <div class="card m-2 p-2 col-lg">
+                <img src="/images/bed7.jpeg" class="card-img-top" height="200">
+                <div class="card-header">
+                    <h2 class="card-title">Luckxaries room</h2>
+                    <p class="card-subtitle">20% offer with family</p>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dd>Available</dd>
+                        <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                        <dd>Prize : 4000 rs only</dd>
+                        <dd><input id="ordern" type="checkbox"></dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline-warning w-100" ondblclick="clickonn()" onclick="clickon(this.id)" id="4000"><span class="bi bi-cart4"></span>Book Now</button>
+                </div>
+            </div>
+            <div class="card m-2 p-2 col-lg">
+                <img src="/images/bed5.jpeg" class="card-img-top" height="200">
+                <div class="card-header">
+                    <h2 class="card-title">Luckxaries room</h2>
+                    <p class="card-subtitle">20% offer with family</p>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dd>Available</dd>
+                        <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                        <dd>Prize : 5000 rs only</dd>
+                        <dd><input id="order0" type="checkbox"></dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline-warning w-100" ondblclick="clickon0()" onclick="clickon(this.id)" id="5000"><span class="bi bi-cart4"></span>Book Now</button>
+                </div>
+            </div>
+
+            <div class="card m-2 p-2 col-lg">
+                <img src="/images/sofa.jpeg" class="card-img-top" height="200">
+                <div class="card-header">
+                    <h2 class="card-title">Luckxaries room</h2>
+                    <p class="card-subtitle">20% offer with family</p>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dd>Available</dd>
+                        <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                        <dd>Prize : 6000 rs only</dd>
+                        <dd><input id="order1" type="checkbox"></dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline-warning w-100" ondblclick="clickon1()" onclick="clickon(this.id)" id="6000"><span class="bi bi-cart4"></span>Book Now</button>
+                </div>
+            </div>
+
+            <div class="card m-2 p-2 col-lg">
+                <img src="/images/bed6.jpeg" class="card-img-top" height="200">
+                <div class="card-header">
+                    <h2 class="card-title">Luckxaries room</h2>
+                    <p class="card-subtitle">20% offer with family</p>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dd>Available</dd>
+                        <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                        <dd>Prize : 7000 rs only</dd>
+                        <dd><input id="order2" type="checkbox"></dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-outline-warning w-100"ondblclick="clickon2()" onclick="clickon(this.id)" id="7000"><span class="bi bi-cart4"></span>Book Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div>
+            <div class="row ">
+                <div class="card m-2 p-2 col-lg">
+                    <img src="/images/Bed img1.png" class="card-img-top" height="200">
+                    <div class="card-header">
+                        <h2 class="card-title">Luckxaries room</h2>
+                        <p class="card-subtitle">20% offer with family</p>
+                    </div>
+                    <div class="card-body">
+                        <dl>
+                            <dd>Available</dd>
+                            <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                            <dd>Prize : 8000 rs only</dd>
+                            <dd><input id="order3" type="checkbox"></dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-warning w-100" ondblclick="clickon3()" onclick="clickon(this.id)" id="8000"><span class="bi bi-cart4"></span>Book Now</button>
+                    </div>
+                </div>
+                <div class="card m-2 p-2 col-lg">
+                    <img src="/images/bed2.jpeg" class="card-img-top" height="200">
+                    <div class="card-header">
+                        <h2 class="card-title">Luckxaries room</h2>
+                        <p class="card-subtitle">20% offer with family</p>
+                    </div>
+                    <div class="card-body">
+                        <dl>
+                            <dd>Available</dd>
+                            <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                            <dd>Prize : 9000 rs only</dd>
+                            <dd><input id="order4" type="checkbox"></dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-warning w-100" ondblclick="clickon4()" onclick="clickon(this.id)" id="9000"><span class="bi bi-cart4"></span>Book Now</button>
+                    </div>
+                </div>
+    
+                <div class="card m-2 p-2 col-lg">
+                    <img src="/images/bed3.jpeg" class="card-img-top" height="200">
+                    <div class="card-header">
+                        <h2 class="card-title">Luckxaries room</h2>
+                        <p class="card-subtitle">20% offer with family</p>
+                    </div>
+                    <div class="card-body">
+                        <dl>
+                            <dd>Available</dd>
+                            <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                            <dd>Prize : 10000 rs only</dd>
+                            <dd><input id="order5" type="checkbox"></dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-warning w-100" ondblclick="clickon5()" onclick="clickon(this.id)" id="10000"><span class="bi bi-cart4"></span>Book Now</button>
+                    </div>
+                </div>
+    
+                <div class="card m-2 p-2 col-lg">
+                    <img src="/images/withwater.jpeg" class="card-img-top" height="200">
+                    <div class="card-header">
+                        <h2 class="card-title">Luckxaries room</h2>
+                        <p class="card-subtitle">20% offer with family</p>
+                    </div>
+                    <div class="card-body">
+                        <dl>
+                            <dd>Available</dd>
+                            <dd>Facitlities : clean washrooms with hot water <br> and shower , lockes ,led </dd>
+                            <dd>Prize : 11000 rs only</dd>
+                            <dd><input id="order6" type="checkbox"></dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-warning w-100" ondblclick="clickon6()" onclick="clickon(this.id)" id="11000"><span class="bi bi-cart4"></span>Book Now</button>
+                    </div>
+                </div>
+                
+            </div>
+        <div>
+            <dl>
+                <dt class="mb-2">Add advance amount</dt>
+                <dd class="mb-1"><input type="text" id="advanceAmt"></dd>
+                <dd id="lessAmount"></dd>
+            </dl>
+        </div>
+        <div>
+            <button onclick="orderClick()" data-bs-target="#summary" data-bs-toggle="modal" class="btn btn-primary w-100 mb-4">Book Room</button>
+            <div class="modal fade" id="summary">
+                <div class="modal-dialog bg-light " >
+                    <div class="modal-header">
+                        <h2>Youre Bill </h2>
+                        <button class="btn-close bg-dark" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <div class="row">
+                            <dt class="col-6 mb-2">Customer Name</dt>
+                            <dd  id="lblName mb-2" class="col-6"></dd>
+                            <dt class="col-6 mb-2">Mobile</dt>
+                            <dd class="col-6 mb-2" id="lblMobile"></dd>
+                            <dt class="col-6 mb-2">Adhar Number</dt>
+                            <dd class="col-6 mb-2" id="lblAdhar"></dd>
+                            <dt class="col-6 mb-2">Pancard number</dt>
+                            <dd class="col-6 mb-2" id="lblPan"></dd>
+                            <dt class="col-6 mb-2">Total Persons</dt>
+                            <dd class="col-6 mb-2" id="lblPerson"></dd>
+                            <dt class="col-6 mb-2">Advance Amount</dt>
+                            <dd class="col-6 mb-2" id="lblAmount"></dd>
+                            <dt class="col-6 mb-2">Room Prize : </dt>
+                            <dd class="col-6 mb-2" id="lblPrize"></dd>
+                       
+                            </div>
+                            
+
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal" onclick="orderClick()">payment</button>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="modal-body">
+            <dl>
+                <div class="row col-12">
+                    <dd class="col-3">Get to Know Us</dd>
+                    <dd class="col-3">About Us</dd>
+                    <dd class="col-3">Careers</dd>
+                    <dd class="col-3">presss releases</dd>
+                    <dd class="col-3">Hotel Brand</dd>
+                    <dd class="col-3">gift a smile</dd>
+                    <dd class="col-3">Food Festivsl</dd>
+                    <dd class="col-3">Make Money with us</dd>
+                    <dd class="col-3">Sell Online</dd>
+                    <dd class="col-3">Sell your product</dd>
+                    <dd class="col-3">Become an Affiliate</dd>
+                    <dd class="col-3">Advertise Your Products</dd>
+                    <dd class="col-3">Join to prime</dd>
+                    <dd class="col-3">buy from Hotel Brand</dd>
+                    <dd class="col-3">Hotel intiligence</dd>
+                    <dd class="col-3">Become an good</dd>
+                </div>
+            </dl>
+
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+
+</html>
